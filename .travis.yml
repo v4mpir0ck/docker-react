@@ -6,4 +6,4 @@ before_install:
         - docker build -t v4mpir0ck/docker-react -f dockerfile.dev . 
 script:
         # le decimos que corra el rest y luego cierre ese comando, si no se quedaria ahi 4ever
-        -docker run v4mpir0ck/docker-react npm run test -- --coverage
+        - docker run v4mpir0ck/docker-react npm run test -- --coverage
